@@ -1,0 +1,77 @@
+	<<shape of array>>
+import numpy as np
+a = np.array([1,2,3])
+print("type: %s" %type(a))
+print("shape: %s" %a.shape)
+print(a[0],a[1],a[2])
+	<<to change a number in array>>
+import numpy as np
+a = np.array([1,2,3])
+print("type: %s" %type(a))
+print("shape: %s" %a.shape)
+print(a[0],a[1],a[2])
+a[0] = 5 
+print(a)
+	<<to print matrix with zeros>>
+import numpy as np
+a = np.zeros((2,2))
+print("all zeros matrix:\n %s" %a)
+	<<print matrix with all ones>>
+import numpy as np
+b = np.ones((1,2))
+print("\nall ones matrix:\n %s" %b)
+	<<identity matrix>>
+import numpy as np
+d = np.eye(2)
+print("\n identity matrix: \n%s" %d)
+	<<random numbers>>
+import numpy as np
+e = np.random.random((2,2))
+print("\n random matrix: \n%s" %e)
+print("vectorized sum example \n")
+	<<sum of array elements>>
+import numpy as np
+x = np.array([[1,2],[3,4]])
+print("x:\n %s" %x)
+print("sum: %s" %np.sum(x))
+print("sum axis = 0 %s" %np.sum(x, axis=0))
+print("sum axis = 1 %s" %np.sum(x, axis=1)
+	<<dot product>>
+import numpy as np
+a = np.arange(10000)
+b = np.arange(10000)
+dp = np.dot(a,b)
+print("dot product: %s\n" %dp)
+	<<outer product>>
+import numpy as np
+a = np.arange(10000)
+b = np.arange(10000)
+op = np.outer(a,b)
+print("\n outer product: %s\n" %op)
+	<<multiplication>>
+import numpy as np
+a = np.arange(10000)
+b = np.arange(10000)
+ep = np.multiply(a,b)
+print("\n element wise product: %s \n" %ep)
+	<<dot product with given range>>
+import numpy as np
+a = np.arange(5)
+b = np.arange(5)
+dp = np.dot(a,b)
+np.multiply(a,b)
+print(a,b)
+print(dp)
+	<<svd>>
+from numpy import array
+from scipy.linalg import svd
+A = array([[1,2],[3,4],[5,6]])
+print("A: \n%s" %A)
+U,s,VT = svd(A)
+print("\nU: \n%s" %U)
+print("\ns: \n%s" %s)
+print("\nVT: \n%s" %VT)
+
+
+
+
